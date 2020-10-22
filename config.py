@@ -1,2 +1,0 @@
-token = '1023460395:AAFSjuRQlEErvJPRoHduc6BR1NgViog9sHc'
-admin_id = 1301095880
