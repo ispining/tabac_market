@@ -48,7 +48,7 @@ def handle_docs_photo(message):
                 bot.send_message(message.chat.id, "המודעה נשלחה בהצלחה!")
                 print("\nAction:    --New post--")
                 print("\nUsername:  --@" + user_id + "--")
-                print("Post text:   --" + message.captin)
+                print("Post text:   " + message.caption)
                 print("#############################################")
         else:
             bot.send_message(message.chat.id, "תמונה ללא טקסט אינה מתקבלת. נסה שנית...")
