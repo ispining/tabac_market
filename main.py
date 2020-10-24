@@ -12,7 +12,7 @@ banned_users = []
 
 
 
-
+print("\n\n Bot name:    @TABAC_MARKET\n")
 
 
 @bot.message_handler(commands=["start"])
@@ -46,6 +46,7 @@ def handle_docs_photo(message):
                 keyboard.add(button_geza)
                 bot.send_photo(config.chat_idr, photo, caption=message.caption+"\nשם הסוחר: @"+message.from_user.username, reply_markup=keyboard)
                 bot.send_message(message.chat.id, "המודעה נשלחה בהצלחה!")
+                print("@" + user_id + " was send new ad\n")
         else:
             bot.send_message(message.chat.id, "תמונה ללא טקסט אינה מתקבלת. נסה שנית...")
     else:
