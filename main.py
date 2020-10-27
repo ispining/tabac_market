@@ -45,6 +45,7 @@ def handle_docs_photo(message):
                 keyboard.add(button_mention)
                 keyboard.add(button_geza)
                 bot.send_photo(config.chat_idr, photo, caption=message.caption+"\nשם הסוחר: @"+str(message.from_user.username), reply_markup=keyboard)
+                bot.send_photo(config.chat_idr1, photo, caption=message.caption+"\nשם הסוחר: @"+str(message.from_user.username), reply_markup=keyboard)
                 bot.send_message(message.chat.id, "המודעה נשלחה בהצלחה!")
                 print("\nAction:    --New post--")
                 print("\nUsername:  --@" + user_id + "--")
